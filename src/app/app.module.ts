@@ -10,13 +10,15 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent} from './portfolio/portfolio.component';
+import { HomeComponent } from './home/home.component';
 
 
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'portfolio', component: PortfolioComponent },
-  { path: '',   redirectTo: '/', pathMatch: 'full' },
-  { path: '**', redirectTo: '/' },
+  { path: 'home', component: HomeComponent },
+  { path: '',   redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/home' },
 
 ];
 
@@ -24,7 +26,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     AboutComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -27,26 +27,10 @@
   </mdb-navbar>
 
   <!-- Intro Section -->
-  <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(./assets/backgroundImage.jpg); background-position: 100%;background-repeat: no-repeat;background-size: cover;">
-    <div class="full-bg-img mask rgba-black-light">
-      <div class="container flex-center">
-        <div class="row pt-5 mt-3 w-100">
-          <div class="col-md-12">
-            <div class="text-center">
-              <h2 class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>Hi,
-                My name is Ajith</strong></h2>
-              <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
-              <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>I Like to design and provide solutions for software testing.
-               <br><br>Its nice to meet you</strong></h5>
-              <a mdbBtn color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s"
-                mdbWavesEffect>portfolio</a>
-              <a mdbBtn color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s"
-                mdbWavesEffect routerLink="/about" routerLinkActive="active">About me</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div>
+    <router-outlet #routerOutlet="outlet"></router-outlet>
   </div>
+  <!-- <router-outlet name="popup"></router-outlet> -->
+
 </header>
 <!--Main Navigation-->
